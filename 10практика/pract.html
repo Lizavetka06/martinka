@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Практика №10</title>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, greenyellow, plum);
+        }
+        .container {
+            margin-top: 15rem;
+            width: 32em;
+            background-color: #ffffff;
+            padding: 5em;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+        .wrapper {
+            display: flex;
+            align-content: center;
+            justify-content: space-between;
+            margin: 1em 0;
+        }
+        canvas {
+            border: 3px solid greenyellow;
+            border-radius: 0.4em;
+        }
+        button#reload-button {
+            font-size: 26px;
+            width: 4.6em;
+            background-color: plum;
+            border: none;
+            border-radius: 0.4em;
+            color: #ffffff;
+        }
+        input[type="text"] {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.05em;
+            width: 100%;
+            padding: 1em 0.7em;
+            border: 3px solid plum;
+            border-radius: 0.4em;
+        }
+        button#submit-button {
+            width: 100%;
+            background-color: greenyellow;
+            color: #ffffff;
+            font-size: 1.5em;
+            border: none;
+            margin-top: 1em;
+            padding: 0.8em 0;
+            border-radius: 0.4em;
+            font-family: 'Oswald', sans-serif;
+        }
+        button#active-button {
+            width: 100%;
+            background-color: greenyellow;
+            color: #ffffff;
+            font-size: 1.5em;
+            border: none;
+            margin-top: 1em;
+            padding: 0.8em 0;
+            border-radius: 0.4em;
+            font-family: 'Oswald', sans-serif;
+        }
+        #slice-input{
+            width: 200px;
+            height: 70px;
+            padding: 1em 0.7em;
+            width: 200px;
+        
+        }
+        #story {
+            margin: 5rem 5rem;
+            padding: 1em 0.7em;
+            border: 3px solid white;
+            border-radius: 0.4em;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.05em;
+            color: white;
+        }
+        button#go-button {
+            width: 100%;
+            background-color: plum;
+            color: #ffffff;
+            font-size: 1.5em;
+            border: none;
+            margin-top: 1em;
+            padding: 0.8em 0;
+            border-radius: 0.4em;
+            font-family: 'Oswald', sans-serif;
+        }
+        </style>
+        
+</head>
+<body>
+
+<div class="container">
+    <div class="wrapper">
+        <canvas id="canvas" width="200" height="70"></canvas>
+        <button id="reload-button">
+            <i class="fa-solid fa-arrow-rotate-right"></i>
+        </button>
+    </div>
+    <input
+            type="text"
+            id="user-input"
+            placeholder="Введите результат"
+    />
+    <button id="submit-button">Отправить</button>
+    <button id="active-button" disabled>Пройти регистрацию</button>
+    <button id="go-button">
+        <i class="fa-solid fa-arrow-rotate-right"></i>
+    </button>
+</div>
+<div id="story">Практическая работа №10</div>
+<script>
+    let submitButton = document.getElementById("submit-button");
+    let activeButton = document.getElementById("active-button");
+    let userInput = document.getElementById("user-input");
+    let canvas = document.getElementById("canvas");
+    let reloadButton = document.getElementById("reload-button");
+    let text = "";
+    let answer = 0;
+    let n1 = 0;
+    let n2 = 0;
+    
+    const textGenerator = () => {
+        let generatedText = "";
+        n1 = randomNumber(0,9);
+        n2 = randomNumber(0,9);
+        generatedText += n1.toString();
+        generatedText += "+";
+        generatedText += n2.toString();
+        return generatedText;
+    };
+    
+    const randomNumber = (min, max) =>
+        Math.floor(Math.random() * (max - min + 1) + min);
+    
+    function drawStringOnCanvas(string) {
+        let ctx = canvas.getContext("2d");
+        ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+        const textColor = "rgb(130,130,130)";
+        const letterSpace = 150 / string.length;
+        for (let i = 0; i < string.length; i++) {
+            const xInitialSpace = 45;
+            ctx.font = "20px Oswald";
+            ctx.fillStyle = textColor;
+            ctx.fillText(
+                string[i],
+                xInitialSpace + i * letterSpace,
+                40,
+                100
+            );
+        }
+    }
+    
+    function triggerFunction() {
+        userInput.value = "";
+        text = textGenerator();
+        console.log(text);
+        drawStringOnCanvas(text);
+    }
+    
+    reloadButton.addEventListener("click", triggerFunction);
+    
+    window.onload = () => triggerFunction();
+    
+    
+    submitButton.addEventListener("click", () => {
+        answer = n1 + n2;
+        text = answer.toString();
+        if (userInput.value === text) {
+            alert("Правильно");
+            activeButton.removeAttribute('disabled');
+        } else {
+            alert("Неправильно");
+            triggerFunction();
+        }
+    });
+    
+    activeButton.addEventListener("click", () => {
+        reloadButton.style.backgroundColor = 'greenyellow';
+        userInput.style.border= '3px solid greenyellow';
+        goButton.style.backgroundColor = 'greenyellow';
+    });
+    
+    function Adder(startingValue) {
+        this.value = startingValue;
+    
+        this.addInput = function() {
+            this.value += +prompt('Сколько добавлять будем?', 1);
+        };
+    
+        this.showValue = function() {
+            alert(this.value);
+        };
+    }
+    
+    function Adder(startingValue) {
+        this.value = startingValue;
+    
+        this.addInput = function() {
+            this.value += +prompt('Введите число, которое хотите добавить', "0");
+        };
+    
+        this.showValue = function() {
+            alert(this.value);
+        };
+    }
+    
+    var adder = new Adder(0);
+    adder.addInput();
+    adder.addInput();
+    adder.addInput();
+    adder.showValue();
+    
+    
+    function truncate(str, n) {
+        if (str.length > n) {
+            return str.slice(0, n) + "...";
+        }
+    
+        return str;
+    }
+    
+    let sliceInput = document.getElementById("slice-input");
+    let storyText = document.getElementById("story");
+    let goButton = document.getElementById("go-button");
+    
+    goButton.addEventListener("click", () => {
+        storyText.textContent = truncate(storyText.textContent, answer);
+    });
+</script>
+</body>
+</html>
+
+

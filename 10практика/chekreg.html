@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация :3</title>
+    <link rel="icon" type="image/png" href="https://i.pinimg.com/564x/2b/da/b3/2bdab3093d82defe4e013f53eb2307bd.jpg">
+    <link rel="stylesheet" href="login_style.css">
+    
+    <script src="https://kit.fontawesome.com/f0b1877548.js" crossorigin="anonymous"></script>
+    
+</head>
+<body onload="generate()">
+  
+    <!--Форма с анимацией
+    <div class="section_form">
+        <div class="form_box">
+            
+            <div class="square" style="--i:0;"></div>
+            <div class="square" style="--i:1;"></div>
+            <div class="square" style="--i:2;"></div>
+            <div class="square" style="--i:3;"></div>
+            <div class="square" style="--i:4;"></div>
+            <div class="square" style="--i:5;"></div>
+            
+            <div class="form_anmimated_container"> 
+            <div class="form_animated"> 
+                <h2>Вход на сайт</h2>
+        
+                <form action="">
+        
+                <div class="inputBx">
+                    <input class="inputBx_pl" type="text" required="required">
+                    <span>Логин</span>
+                    <i class="fas fa-user-circle"></i>
+                </div>
+        
+                <div class="inputBx password">
+                    <input class="inputBx_pl" id="password-input" type="password" name="password" required="required">
+                    <span>Пароль</span>
+                    <i class="fas fa-key"></i>
+                </div>
+        
+                <label class="remember"><input type="checkbox">
+                    Запомнить пароль</label>
+          
+                </div>
+                <div class="form-input">
+                    <input id="login-btn" class="inputBx_button" type="submit" value="Вход"> 
+                </div>
+                <div class="form-input">
+                    <button id="login-btn">Login</button>
+                </div>
+          
+                </form>
+          
+                <p>Забыли пароль? <a href="#">Восстановить</a></p>
+                <p>Еще нет аккаунта? <a href="#">Регистрация</a></p>
+            </div>
+            </div>
+            
+        </div>
+    </div>-->
+
+    
+<!---->
+<div class="section_form">
+      <div class="login-form">
+        <div class="form-title">
+         Вход
+        </div>
+        <div class="form-input">
+            <label for="username">Никнейм <i class="fas fa-user-circle"></i></label>
+            
+            <input type="text" id="username">
+        </div>
+        <div class="form-input">
+            <label for="password">Пароль <i class="fas fa-key"></i></label>
+            
+            <input type="password" id="password">
+        </div>
+        <div class="captcha">
+            <label for="captcha-input">Введите капчу</label>
+            <div id="image" class="inline" selectable="False">
+            </div>
+            <div id="user-input" class="inline">
+                <input type="text" id="submit"
+                    placeholder="Captcha code" />
+            </div>
+            <p id="key"></p>
+            <div class="" onclick="generate()">
+                <i class="fas fa-sync"></i>
+            </div>
+            <input type="submit" id="btn" onclick="printmsg()" placeholder="Sub" />
+    
+            
+        </div>
+        <div id="check-c" class="check-container">
+            <input type="text" id="input_val" />
+            <p id="operation"><span id="num1">0</span> + <span id="num2">1</span></p>
+            <button id="btn1">Отправить</button>
+        </div>
+        <div class="form-input">
+            <input id="login-btn" type="submit" value="Вход"> 
+        </div>
+    </div> 
+   </div> 
+   
+   
+   <div id="story">Здесь много текста, проверка сокращения бла-бла-бла</div>
+    <input type="text" id="reduc" placeholder="Number" />
+    <button id="go-button">
+          <i class="fa-solid fa-arrow-rotate-right"></i>
+    </button>
+
+    <button id="start-button">
+      Mини калькулятор
+    </button>
+        
+   <form>
+        <div class="fon">
+            <input type="button" class="go_to_site" value="Быстрый вход" onClick="Input()">
+        </div>
+    </form>
+
+    <div class="like">
+      <button onclick="btn_clik()" id="button" class="likebtn"><img id="heart" src="heart.png" alt=""><span id="count">1</span></button>
+    </div>
+    <i onclick="myFunction(this)" class="fa-regular fa-heart"></i>
+
+    
+    
+
+    <script src="chekc.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
