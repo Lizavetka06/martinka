@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+html {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    background: #c7b39b url(https://i.pinimg.com/564x/7a/71/ee/7a71eef5cbe5001ffa4c43b74f0b5c2c.jpg);
+}
+
+header {
+    position: relative;
+    top: .5rem;
+    background-color: #eee;
+    border: .5rem #7e293b;
+    display: inline;
+}
+
+main {
+    position: sticky;
+    top: 0;
+    z-index: 0;
+    border: 1px solid rgb(159, 44, 44);
+    text-align: justify;
+    padding-left: .5rem;
+    background-color: #eee;
+}
+
+nav ul {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fdf4c8;
+}
+  
+nav li {
+    float: right;
+}
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+nav li a:hover {
+    background-color: #ffffff;
+}
+
+aside {
+    width: 50%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: left;
+    box-shadow: inset 5px 0 5px -5px #7e293b;
+    /*font-style: italic;*/
+    color: #7e293b;
+}
+
+div {
+    display: block;
+    padding-bottom: 6.5rem;
+    margin-left: 5rem;
+    height: 50px;
+    width: 500px;
+    background-color: #7e293b;
+    text-align: left;
+    color: black;
+}
+div p {
+    padding-top: .5rem;
+    text-align: center;
+    color: #ffffff;
+}
+div > img {
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-left: .5rem;
+}
+
+.pad {
+    padding-bottom: 27rem;
+}
+
+aside > p {
+    margin: .5rem;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #fdf4c8;
+    margin-top: 2.8rem;
+}
+
+h2 {
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+}
+
+.sec {
+    color: white;
+}
+
+section {
+    background: rgb(159, 44, 44);
+    margin: 2rem 0rem;
+    padding: .3rem
+}
+
+section > p {
+    color: #eee;
+    padding: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+article {
+    border: 1px solid rgb(159, 44, 44);
+    margin: 0;
+    padding: .3rem;
+    background-color: #eee;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+#gift {
+    position: relative;
+    left: -100px;
+    background: none;
+    border: none;
+}
+
+.sec li {
+    border: #eee;
+
+}
+
+.sec li > a {
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+}
+
+.sec li > a:link {
+    color:#eee
+}
+
+.sec li > a:visited {
+    color:rgb(48, 43, 43)
+}
+
+.sec li > a:hover {
+    text-decoration: underline;
+    color:rgb(141, 119, 139)
+}
+
+a:link {
+    color:rgb(205, 10, 14)
+}
+
+a:visited {
+    color:rgb(225, 0, 255);
+    background-color:rgba(198, 40, 169, 0.573)
+}
+
+a:hover {
+    color:rgb(46, 181, 167)
+}
+
+a:active {
+    background-color:rgb(229, 240, 33)
+}
+
+footer {
+    position: absolute;
+    left: 32%;
+    background:rgb(255, 255, 255);
+    padding: 0 2rem;
+    font-size: 10pt;
+}
+
+.img {
+    float: left;
+}
+
+.cyrilic {
+    list-style-type: none; /* Прячем исходную нумерацию */
+}
+.cyrilic li::before {
+ margin-right: 5px; /* Расстояние от буквы до текста */
+ width: 1em; /* Ширина */
+ text-align: left; /* Выравнивание по правому краю */
+ display: block; /* блочный элемент */
+ color: #dd133f;
+}
+.cyrilic li:nth-child(1)::before { content: 'А'; }
+.cyrilic li:nth-child(2)::before { content: 'Б'; }
+.cyrilic li:nth-child(3)::before { content: 'В'; }
+.cyrilic li:nth-child(4)::before { content: 'Г'; }
+.cyrilic li:nth-child(5)::before { content: 'Д'; }
+.cyrilic li:nth-child(6)::before { content: 'Е'; }
+.cyrilic li:nth-child(7)::before { content: 'Ё'; }
+.cyrilic li:nth-child(8)::before { content: 'Ж'; }
+.cyrilic li:nth-child(9)::before { content: 'З'; }
+.cyrilic li:nth-child(10)::before { content: 'И'; }
+.cyrilic li:nth-child(11)::before { content: 'К'; }
+.cyrilic li:nth-child(12)::before { content: 'Л'; }
+.cyrilic li:nth-child(13)::before { content: 'М'; }
+.cyrilic li:nth-child(14)::before { content: 'Н'; }
+.cyrilic li:nth-child(15)::before { content: 'О'; }
+.cyrilic li:nth-child(16)::before { content: 'П'; }
+.cyrilic li:nth-child(17)::before { content: 'Р'; }
+.cyrilic li:nth-child(18)::before { content: 'С'; }
+.cyrilic li:nth-child(19)::before { content: 'Т'; }
+.cyrilic li:nth-child(20)::before { content: 'У'; }
+.cyrilic li:nth-child(21)::before { content: 'Ф'; }
+.cyrilic li:nth-child(22)::before { content: 'Х'; }
+.cyrilic li:nth-child(23)::before { content: 'Ц'; }
+.cyrilic li:nth-child(24)::before { content: 'Ч'; }
+.cyrilic li:nth-child(25)::before { content: 'Ш'; }
+.cyrilic li:nth-child(26)::before { content: 'Щ'; }
+.cyrilic li:nth-child(27)::before { content: 'Э'; }
+.cyrilic li:nth-child(28)::before { content: 'Ю'; }
+.cyrilic li:nth-child(29)::before { content: 'Я'; }
