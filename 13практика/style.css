@@ -1,0 +1,131 @@
+li img {
+  width: 200px;
+  height: 170px;
+  object-fit: cover;
+}
+p img{
+  margin-left: 300px;
+ }
+ img{
+  max-width: 400px;
+ }
+ ul{
+  list-style: none;
+ }
+.body13 li {
+  display: inline;
+}
+
+.pr133 {
+  font-size: 20px;
+}
+
+.slider {
+  border-radius: 5px;
+  background: #E0E0E0;
+  background: linear-gradient(45deg, #ffb3b3, #f0f0f0);
+  width: 500px;
+  height: 15px;
+  margin: 30px 0 30px 500px;
+}
+  
+  .thumb {
+    width: 10px;
+    height: 25px;
+    border-radius: 3px;
+    position: relative;
+    left: 10px;
+    top: -5px;
+    background: rgb(254, 69, 171);
+    cursor: pointer;
+  }
+  #train {
+    position: relative;
+    cursor: pointer;
+  }
+  .poezd
+  {
+    width: 180px;
+    height: 150px;
+}
+
+#storage {
+    width: 50%;
+    font-size: 17px;
+    border-collapse: collapse;
+    text-align: center;
+    cursor: pointer;
+    }
+    th, td:first-child {
+    background: rgb(255, 164, 238);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    }
+    th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+    }
+    th:first-child, td:first-child {
+    text-align: left;
+    }
+#cart {
+    width: 50%;
+    font-size: 17px;
+    border-collapse: collapse;
+    text-align: center;
+    }
+    th, td:first-child {
+    background: rgb(255, 164, 238);
+    color: black;
+    padding: 10px 20px;
+    }
+    th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+    padding: 10px 20px;
+    }
+    td {
+    background: rgb(255, 130, 201);
+    }
+    th:first-child, td:first-child {
+    text-align: left;
+    }
+    #Totalsum td:first-child, #Totalcount td:first-child {
+      background: rgb(255, 144, 144);
+      font-size: 17px;
+    }
+    #Totalsum td:nth-child(2), #Totalcount td:nth-child(2) {
+      background: rgb(255, 208, 137);
+      font-size: 17px;
+    }
+h2
+{
+    color: rgb(254, 69, 69);
+}
+.lasttask
+{
+    text-align: center;
+    margin-left: 35%;
+    margin-bottom: 30px;
+}
+.lasttask p
+{
+  margin-right: 800px;
+  font-size: 30px;
+  color: rgb(255, 103, 255);
+}
+.selected{
+    color:rgb(254, 69, 220);
+}
+#field {
+    height: 200px;
+    border-bottom: 3px black groove;
+    position: relative;
+  }
+  
+  #ball {
+    position: absolute;
+    cursor: pointer;
+  }
