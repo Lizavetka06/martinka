@@ -1,0 +1,239 @@
+.form_div  /*блок в котором расположена форма с анимацией*/
+{
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap row;
+    background: #13151a;
+    border: none;
+    margin: 40px;
+    padding: 20px;
+    width:90vw;
+    flex-grow: 1;
+}
+
+.form_content /*здесь и серая плашка, и текст*/
+{
+    width: 60%;
+    box-sizing: border-box;
+    margin: 10% auto;
+    padding: 40px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.264);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 0;
+    transition:0.5s;
+    color: #fff;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.form_content p /*черта под авторизацией*/
+{
+    display: block;
+    position: relative;
+    width: 25vw;
+    padding-bottom:10px; /*10 пикселей отступ от низа букв авторизация*/
+}
+
+.form_content p::before /*описание черты под авторизацией и как она появляется*/
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    height: 4px;
+    width: 0;
+    opacity: 0; /*изначально она не видна.*/
+    background-color: white;
+    transition: 0.5s;
+}
+.form_content:hover p::before 
+{
+    left:0%;
+    width: 100%;
+    opacity: 1;
+}
+
+.form_content a {
+    font-size: small;
+}
+.form_content a:hover {
+    background-color: transparent;
+}
+
+.form_content form input{
+    display: block;
+    width: 80%;
+    height: 50%;
+    margin-bottom: 5%;
+    text-align: left;
+    border: none;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(100px);
+    padding: 15px;
+    z-index: 5;
+}
+
+.form_content form input:focus{ /*при нажатии фон в поле для ввода меняется на более светлый*/
+    border: none;
+    background-color: rgba(255, 255, 255, 0.407);
+}
+
+.form_content form input::placeholder /*описание текста показывающего что вводить*/
+{
+    padding: 10px 5px;
+    font-size: 1.3em;
+    color:rgba(236, 228, 228);
+}
+
+.form_content form button{ /*как кнопка выглядит в изначальном состоянии*/
+    cursor: pointer;
+    display: block;
+    height: 50%;
+    width: 30%;
+    margin-top: 8%;
+    border-radius: 40px;
+    background-color:white;
+    backdrop-filter: blur(100px);
+    padding: 10px 5px;
+    font-size: 0.7em;
+    font-weight: 600;
+    border: none;
+    color: rgb(126, 116, 116);
+    transition: 0.5s;
+    z-index: 5;
+}
+
+.form_content form button:hover /*что происходит с кнопкой при наведении*/
+{
+    background-color: rgba(255, 255, 255, 0.1);
+    color:white;
+}
+
+.form_content span{ /*спан отвечает за все квадраты*/
+    display: block;
+    z-index:5;
+    transition: 0.5s;
+}
+
+/*элементы с псевдоэлементом бефор - левый и правый квадраты, их анимация отличается от остальных трёх.*/
+.form_content span:nth-child(1)::before /*первый квадрат (самый большой)*/
+{
+    content:"";
+    position: absolute;
+    top:40%;
+    left:-20%;
+    height: 120px;
+    width: 120px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.264);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    z-index:-110;
+}
+
+.form_content span:nth-child(1)::after
+{
+    content:"";
+    position: absolute;
+    top:-15%;
+    right:-10%;
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.264);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    z-index:-10;
+}
+
+.form_content span:nth-child(4)::after /*верхний квадрат*/
+{
+    content:"";
+    position: absolute;
+    top:-13%;
+    left:30%;
+    height: 60px;
+    width: 60px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.264);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    z-index:-110;
+}
+
+.form_content span:nth-child(4)::before
+{
+    content:"";
+    position: absolute;
+    bottom:5%;
+    right:-15%;
+    height: 70px;
+    width: 70px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.264);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    z-index:110;
+}
+.form_content span:nth-child(5)::after
+{
+    content:"";
+    position: absolute;
+    bottom:-10%;
+    left:40%;
+    height: 50px;
+    width: 50px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.264);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    z-index:110;
+}
+
+/*квадраты начинают двигаться по анимации лишь при наведении на контейнер формы*/
+ .form_div:hover span::before 
+{
+    animation: bef 5s linear infinite;
+}
+.form_div:hover span::after
+{
+    animation: aft 5s linear infinite;
+}
+
+@keyframes bef { /*анимация для двух (самый правый и самый левый квадратов во втором блоке*/
+        
+    30% {
+        transform: translateX(calc(50% + 30px + 2vw)) translateY(calc(50% + 20px + 1vh));
+    }  
+    55% {
+        transform: translateX(calc(50% +30px + 2vw)) translateY(calc(-40% + 20px + 1vh));
+    }
+    80% {
+        transform: translateX(calc(-160% + 1vw)) translateY(calc(-50% + 20px));
+    }
+    0%,100% {
+        transform: translateX(calc(-100% + 1vw)) translateY(calc(100% - 20px + 1vh));
+    }
+}
+
+@keyframes aft { /*анимация для трёх (верхние и нижние) квадратов во втором блоке*/
+    20% {
+     transform: translateX(calc(50% - 30px + 2vw)) translateY(calc(50% + 20px + 1vh));
+    }  
+    50% {
+      transform: translateX(calc(20% +30px + 2vw)) translateY(calc(-10% + 20px + 1vh));
+    }
+    70% {
+      transform: translateX(calc(100% + 1vw)) translateY(calc(120% + 20px));
+    }
+    0%,100% {
+        transform: translateX(calc(-50% + 1vw)) translateY(calc(100% - 20px + 1vh));
+    }
+}
