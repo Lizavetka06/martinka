@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+
+@media screen and (max-width: 600px) {
+    div.FLEX {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+}
+iframe {
+    margin-left: 30%;
+}
+
+video {
+    margin-left: 35%;
+}
+
+div.logo img{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    margin-left: 1vw;
+    width: 7vw;
+}
+
+nav ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 7vw;
+    z-index: 1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #181b22;
+    font-size: 2vw;
+}
+  
+nav li {
+    float: right;
+}
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    padding: 2vh 2vw;
+    text-decoration: none;
+}
+  
+nav li a:hover {
+    background-color: #ffffff;
+}
+
+aside {
+    width: 50%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    margin-top: .5rem;
+    box-shadow: inset 5px 0 5px -5px #f3c33e;
+    /*font-style: italic;*/
+    color: #f3c33e;
+    font-size: 2vh;
+}
+div.FLEX {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.item1{
+    flex-grow: 2;
+    align-items: stretch;
+}
+.item2 {
+    flex-grow: 1;
+    align-items: stretch;
+}
+section.article {
+    flex-grow: 2;
+}
+
+article.pad {
+    border: 0;
+    display: flex;
+}
+
+.pad p {
+    margin: .5rem;
+    font-size: 17px;
+}
+
+div>img {
+    width: 16vw;
+}
+
+h1 {
+    position: fixed;
+    top: 0;
+    display: block;
+    width: 35vw;
+    z-index: 3;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #181b22;
+    color: #f3c33e;
+    margin-left: 9vw;
+    font-size: 3vw;
+}
+
+h2 {
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+}
+
+.sec {
+    color: #f3c33e;
+}
+
+.col3{
+    position: relative;
+    width: 50%;
+}
+
+.col4{
+    position: relative;
+    width: 50%;
+    margin-left:10px;
+}
+
+#gift {
+    background: none;
+    border: none;
+}
+
+.sec li {
+    border: #f3c33e;
+
+}
+
+.sec li > a {
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+}
+
+.sec li > a:link {
+    color:#f3c33e
+}
+
+.sec li > a:visited {
+    color:rgb(205, 10, 14)
+}
+
+.sec li > a:hover {
+    text-decoration: underline;
+    color:#f7e882
+}
+
+a:link {
+    color:#f3c33e
+}
+
+a:visited {
+    color:rgb(205, 10, 14);
+    background-color:rgba(198, 40, 169, 0.573)
+}
+
+a:hover {
+    color:#f7e882
+}
+
+/* a:active {
+    background-color:rgb(229, 240, 33)
+} */
+
+.cyrilic {
+    list-style-type: none; /* Прячем исходную нумерацию */
+}
+.cyrilic li::before {
+    float: left;
+ margin-right: 5px; /* Расстояние от буквы до текста */
+ width: 49%; /* Ширина */
+ text-align: left; /* Выравнивание по правому краю */
+ display: block; /* блочный элемент */
+ color: #dd133f;
+}
+.cyrilic li:nth-child(1)::before { content: 'А'; }
+.cyrilic li:nth-child(2)::before { content: 'Б'; }
+.cyrilic li:nth-child(3)::before { content: 'В'; }
+.cyrilic li:nth-child(4)::before { content: 'Г'; }
+.cyrilic li:nth-child(5)::before { content: 'Д'; }
+.cyrilic li:nth-child(6)::before { content: 'Е'; }
+.cyrilic li:nth-child(7)::before { content: 'Ё'; }
+.cyrilic li:nth-child(8)::before { content: 'Ж'; }
+.cyrilic li:nth-child(9)::before { content: 'З'; }
+.cyrilic li:nth-child(10)::before { content: 'И'; }
+.cyrilic li:nth-child(11)::before { content: 'К'; }
+.cyrilic li:nth-child(12)::before { content: 'Л'; }
+.cyrilic li:nth-child(13)::before { content: 'М'; }
+.cyrilic li:nth-child(14)::before { content: 'Н'; }
+.cyrilic li:nth-child(15)::before { content: 'О'; }
+.cyrilic li:nth-child(16)::before { content: 'П'; }
+.cyrilic li:nth-child(17)::before { content: 'Р'; }
+.cyrilic li:nth-child(18)::before { content: 'С'; }
+.cyrilic li:nth-child(19)::before { content: 'Т'; }
+.cyrilic li:nth-child(20)::before { content: 'У'; }
+.cyrilic li:nth-child(21)::before { content: 'Ф'; }
+.cyrilic li:nth-child(22)::before { content: 'Х'; }
+.cyrilic li:nth-child(23)::before { content: 'Ц'; }
+.cyrilic li:nth-child(24)::before { content: 'Ч'; }
+.cyrilic li:nth-child(25)::before { content: 'Ш'; }
+.cyrilic li:nth-child(26)::before { content: 'Щ'; }
+.cyrilic li:nth-child(27)::before { content: 'Э'; }
+.cyrilic li:nth-child(28)::before { content: 'Ю'; }
+.cyrilic li:nth-child(29)::before { content: 'Я'; }
+
+.form1 span {
+    color: #dd133f;
+}
+
+label{
+    color: white;
+    display: block;
+}
+  
+  /*поведение при нажатие на поле*/
+input:focus{
+    outline: none;
+    background: #181b22;
+    text-decoration: none;
+    border-color: #f3c33e;
+    color: white;
+}
+
+input{
+    display: block;
+    width: 90%;
+    height: 5vh;
+    border: 4px solid #f3c33e;
+    margin: auto;
+    margin-top: 0.8vh;
+    text-align: center;
+}
+
+/*отвечает за кнопку выбора файла*/
+.input-file {
+    position: relative;
+    width: 25vw;
+    color: black;
+    margin: 20px;
+}
+.input-file > span {
+    cursor: pointer;
+    vertical-align: middle;
+    background: white;
+    height: 5vh;
+    border: 2px solid #f3c33e;
+    padding: 1vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    margin: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    text-align: center;
+    z-index: 5;
+}
+.input-file > input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+fieldset{
+    width: 15vw;
+    margin: 3vw 4vh;
+    color: #f3c33e;
+    margin-left: 20px;
+}
+
+fieldset > label {
+    width: 10vw;
+    margin: 1vw 4vh;
+    font-size: 1em;
+}
+
+.inp {
+    width: 50%;
+    height: 3vh;
+    margin: auto;
+    margin-top: 0.8vh;
+    text-align: center;
+}
+
+textarea{
+    width:90%;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+select{
+    width: 10vw;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.col1{
+    position: absolute;
+    width: 50%;
+    left:10%;
+
+}
+
+.col2{
+    position: absolute;
+    width: 50%;
+    left:60%;
+    margin-left:10px;
+}
+
+
+::placeholder {
+    font-weight: bold;
+    opacity: .5;
+    color: rgb(163, 181, 205);
+}
+
+.d4{
+    background-color: #181b22;
+    border: 10px solid rgba(255, 183, 14, 0.856);
+    display: block;
+    margin: 40px;
+    padding: 50px;
+}
+#Topic4{
+    position: relative;
+    height: 100vh;
+}
+
+.check{
+    margin-top: 25px;
+}
+
+.custom-checkbox{
+    position: absolute;
+    top: 615px;
+    left: 190px;
+}
+/* стиль при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border: 10px #f3c33e;
+}
+/* стиль для активного состояния чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active+label::before {
+    background-color: #f6ffb3;
+    border-color: #f3c33e;
+}
+/* стиль для чекбокса, находящегося в фокусе */
+.custom-checkbox:focus+label::before {
+    box-shadow: 0 0 0 0.5rem rgba(255, 213, 0, 0.312);
+}
+/* стиль для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked)+label::before {
+    border-color: #f3c33e;
+}
+/* стиль для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled+label::before {
+    background-color: #bac4ce;
+}
+
+input[type=submit] {
+    background-color: #f3c33e;
+    border: none;
+    color: #000000;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    cursor:pointer;
+}
+
+.button2:hover {
+    box-shadow: 10px 5px 5px #74590ec3;
+}
+
+#sub{
+    width:50%;
+    margin-left: 5%;
+}
+/*
+.button2{
+    background-color: #f3c33e;
+    border: none;
+    color: #000000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    cursor:pointer;
+    width: 100%;
+}*/
