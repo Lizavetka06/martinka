@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- задает ширину видимой области равной ширине устройств -->
+        <title>Регаемся :></title> <!-- имя страницы -->
+	<link rel="icon" type="image/png" href="https://i.pinimg.com/564x/2b/da/b3/2bdab3093d82defe4e013f53eb2307bd.jpg"> <!-- Фавиконка -->
+    <link rel="stylesheet" href="headstyle.css">
+    <link rel="stylesheet" href="styles4.css">
+    </head>
+
+    <body>
+        <h2>Регистрация</h2>
+        <section>
+            <div class="d4" id="Topic4">
+                
+                <div class="col1">
+                    <form name="form1" method="post">
+                        <label><span>*</span>Имя <input type="text" name="name"  placeholder="Ваше имя или ник" required="true"></label>
+                        <label>Номер телефона <input type="tel" name="phone" pattern="[0-9]{11}"></label>
+                        <label>Адрес E-mail <input type="email" name="email"></label>
+                        <label>*Пароль <input type="password" name="passwd" required="true"></label>
+                        <label>Дата рождения <input type="datetime-local" name="date" max="2022-10-07T00:00" min="1950-10-10T23:59"></label>
+                        <label>*О себе <textarea name="about" rows="10" cols="40" maxlength="250" minlength="20" 
+                            placeholder="Какая ваша любимая книга?" required="true"></textarea>
+                        </label>
+                    </form>
+
+                    <form name="form2" method="post">
+                        <label class="input-file">
+                            <input type="file" name="file" class="input_file">
+                                <span>Выберите файл</span>
+                        </label>
+                    </form>
+
+                    <div>
+                        <label class="check" for="agree">Согласен(на) с жабьими правилами</label>
+                        <input type="checkbox" class="custom-checkbox" id="agree" name="agree" value="yes">
+                    </div>
+                </div>
+
+                <div class="col2">
+                    <form>
+                     <!--  <label>Настроение сегодня
+                            <select id="mood" name="mood" multiple required="true" size="3">
+                                <option>Хорошее</option>
+                                <option>Весёлое</option>
+                                <option>Грустное</option>
+                                <option>Подавленное</option>
+                                <option>Злое</option>
+                                <option>Раздражённое</option>
+                                <option>Счастливое</option>
+                                <option>Нормальное</option>
+                                <option>Отвратительное</option>
+                                <option>Уставшее</option>
+                                <option>Жду выходных</option>
+                                <option>А скоро нг?</option>
+                            </select>
+                        </label>--> 
+                        
+                    
+
+                    <fieldset> <!--группировка элементов формы-->
+                        <legend>Ваш любимый жанр</legend><!--заголовок -->
+                        <label>Романы<input class="inp" type="radio" name="radio_1"></label>
+                        <label>Драма<input class="inp" type="radio" name="radio_2"></label>
+                        <label>Детективы<input class="inp" type="radio" name="radio_3"></label>
+                        <label>Триллеры<input class="inp" type="radio" name="radio_4"></label>
+                        <label>Фантастика<input class="inp" type="radio" name="radio_5"></label>
+                        <label>Другое<input class="inp" type="radio" name="radio_6"></label>
+                    </fieldset>
+
+                    <input class="button2" id="sub" type="submit" name="sub">
+                    </form>
+                </div>
+            </div>
+            <form action="#">
+                <fieldset disabled>
+                  <legend>Disabled fieldset</legend>
+                  <div>
+                    <label for="name">Имя: </label>
+                    <input type="text" id="name" value="Ваше имя">
+                  </div>
+                  <div>
+                    <label for="pwd">Пароль: </label>
+                    <input type="password" id="pwd" value="Password">
+                  </div>
+                </fieldset>
+              </form>
+        </section>
+    </body>
+</html>
