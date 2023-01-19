@@ -1,0 +1,207 @@
+<!DOCTYPE html> <!-- Определяет версию HTML, используемую в документе. В данном случае это HTML5. -->
+<html lang="ru"> <!-- Атрибут lang объявляет основной язык страницы с использованием языковых кодов ISO -->
+    <head> <!-- Головной раздел -->
+        <meta charset="UTF-8"> <!-- объявляет кодировку символов -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- задает ширину видимой области равной ширине устройств -->
+        <title>Плачь и читай</title> <!-- имя страницы -->
+	<link rel="icon" type="image/png" href="https://i.pinimg.com/564x/2b/da/b3/2bdab3093d82defe4e013f53eb2307bd.jpg"> <!-- Фавиконка(картинка рядом с названием страницы) -->
+    <link rel="stylesheet" href="styleFLEX.css">
+    <link rel="stylesheet" href="headerFLEX.css">
+    <!-- Библиотека иконок --> 
+    <script src="https://kit.fontawesome.com/f0b1877548.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="body"> <!-- содержимое страницы -->
+        <header>
+            <div class="logo">
+                <img src="https://clck.ru/32JGQA">
+                <h1>Book, sir!</h1>
+            </div>
+            <nav class="hamburger-menu">
+                <!--кнопка меню будет выполнена как чекбокс-->
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span> <!--место для кнопки меню в мобильном устройстве-->
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#contacts">Связаться с нами</a></li>
+                    <li><a class="menu__item" href="#stat">Канцтовары</a></li>
+                    <li><a class="menu__item" href="#gift">Подарки</a></li>
+                    <li><a class="menu__item" href="#sale">Акции</a></li>
+                    <li><a class="menu__item" href="#book">Книги</a></li>
+                </ul>
+            </nav>
+            <h2>Буксир выведет вас на новый уровень развития!</h2>
+            <p>С любовью, наша команда ^-^</p>
+        </header>
+        
+        <main>
+            <p>
+            <a href="/rec">Рекомендации</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="/deliver">Доставка</a>
+            <a href="vidos.html">Видосики</a>
+            <a href="registr.html">Регистрация</a>
+            </p>
+        </main>
+        <div class="center">
+            <div id="book">
+                <section>
+                    <h2>Новинки</h2>
+                    <p>Здесь будут книги</p>
+
+                </section>
+                <section>
+                    <h2>Бестселлеры</h2>
+                    <img src="https://clck.ru/32P9Pr" width="100">
+                </section>
+            </div>
+            <div>
+                <section>
+                    <h2>Эксклюзивные издания</h2>
+
+                </section>
+                <section>
+                    <h2>Скоро в продаже</h2>
+
+                </section>
+            </div>
+            <div class="FLEX">
+                <div class="item">
+                    <div>
+                        <h2>Самые популярные книги этого месяца</h2>
+                        <article class="pad">
+                            <div class="col3">
+                                <div class="image-item">
+                                    <div class="overlay"><span><b>Роман, 1985 год</b><br>Антиутопия, в которой женщины больше не могут иметь детей</span></div>
+                                    <img src="https://www.moscowbooks.ru/image/book/648/w259/i648020.jpg?cu=20190312174531"> <br>
+                                </div>
+                                <b>М.Этвуд «Рассказ служанки»</b>
+                                
+                            </div>
+
+                            <div class="col4">
+                                <div class="image-item">
+                                    <div class="overlay"><span><b>Фэнтези, 2022 год</b><br>Китайская литература</span></div>
+                                    <img src="https://cdn.eksmo.ru/v2/ITD000000001196100/COVER/cover1__w820.jpg" width="250"> <br>
+                                </div>
+                                <b>Мосян Тунсю «Благословение небожителей»</b>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <h2>Рекомендуем</h2>
+                        <article class="pad">
+                            <div class="col3">
+                                <div class="image-item">
+                                    <div class="overlay"><span><b>Автобиография, 2017 год</b><br>"Sometimes you just have to laugh, even when life is a dumpster fire"</span></div>
+                                    <img src="https://www.moscowbooks.ru/image/book/759/w154/i759196.jpg?cu=20220826163517"> <br>
+                                </div>
+                                <b>Саманта Ирби «We Are Never Meeting in Real Life»</b>
+                            </div>
+                            <div class="col4">
+                                <div class="image-item">
+                                    <div class="overlay"><span><b>Роман, 1865 год</b><br>в его основу легли приключения автора в Америке</span></div>
+                                    <img src="https://s1.livelib.ru/boocover/1000972574/200/9877/boocover.jpg" width="250"> <br>
+                                </div>
+                                <b>Майн Рид «Всадник без головы»</b>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <article id="gift">
+            <h2>Подарочные наборы</h2>
+
+        </article>
+        <article class="author">
+            <h2>Популярные авторы</h2>
+            
+        </article>
+        <div class="pract">
+            <div><h2>блок для 8 практики</h2></div>
+
+            <section> <!--секция с формой, вокруг которой летают квадраты-->
+            
+                <div class="d2 form_content"> <!--включает в себя и плашку и текст-->
+                    <p>Авторизация</p>
+                    <form name="form1" method="post">
+                        <input type="text" name="name" placeholder="Имя" required="true">
+                        <input type="text" name="sename" placeholder="Фамилия" required="true">
+                        <input type="email" name="email" placeholder="Почта" required="true">
+                        <input type="password" name="passwd" placeholder="Пароль" required="true">
+                        <button name="sub" type="submit">Войти</button>
+                        <a href="#">Забыли пароль?</a>
+                    </form>
+                </div>
+            
+            </section>
+
+
+            <footer id="contacts">
+                <div class="about">
+                    <h2>BOOK, SIR!</h2>
+                    <span>В нашем магазине вы всегда найдёте книгу по душе. <br>
+                    Мы сотрудничаем с разными издательствами, такими как "Лань", "МИФ", "АСТ" и другими.</span>
+                    <div> <!--секция с карточками с соцсетями при наведении на которые спускается жёлтый фон-->
+                        <div class="d4 soc_div">
+                            <div class="soc_but">
+                                <a href="#">
+                                    <i class="fa-brands fa-discord"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="soc_but">
+                                <a href="#">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </div>
+                            <div class="soc_but">
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>                            
+                                </a>
+                            </div>
+                            <div class="soc_but">
+                                <a href="#">
+                                    <i class="fa-brands fa-vk"></i>
+                                </a>
+                            </div>
+                            <div class="soc_but">
+                                <a href="#">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="links">
+                    <h2>Quick Links</h2>
+                    <a href="#">About</a><br>
+                    <a href="#">FAQ</a><br>
+                    <a href="#">Privacy Policy</a><br>
+                    <a href="#">Help</a><br>
+                    <a href="#">Contacts</a><br>
+                </div>
+                <div class="shop">
+                    <h2>Shop</h2>
+                    <a href="#">Books</a><br>
+                    <a href="#">Gifts</a><br>
+                    <a href="#">Children</a><br>
+                    <a href="#">Men</a><br>
+                    <a href="#">Women</a><br>
+                </div>
+                <div class="contact">
+                    <h2>Contacts</h2>
+                    <a href="mailto:elizabet-mar@mail.ru">elizabet-mar@mail.ru</a><br>
+                    <a href="tel:+7 918 058 28 09">+7 918 058-28-09</a>
+                </div>
+                <div class="foot">
+                    <span>© 2022 «Торговый Дом Книги «BOOK, SIR!»...
+                    Разработчик - Мартыненко Елизавета, ИКБО-13-21</span>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

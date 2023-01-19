@@ -1,0 +1,963 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+
+iframe {
+    margin-left: 30%;
+}
+
+video {
+    margin: 5rem 20%;
+}
+
+div.logo {
+    position: fixed;
+    top: 0;
+    background-color: #181b22;
+    z-index: 1000;
+}
+
+.logo img{
+    position: fixed;
+    top: 0;
+    display: flex;
+    margin-left: 1vw;
+    width: 6vw;
+}
+
+nav ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 7vw;
+    list-style-type: none;
+    margin: 0;
+    padding-top: 5px;
+    overflow: hidden;
+    background-color: #181b22;
+    font-size: 2vw;
+    z-index: 50;
+}
+  
+nav li {
+    float: right;
+}
+  
+nav li a {
+    display: block;
+    color: #f3c33e;
+    text-align: center;
+    margin-top: 5px;
+    padding: 2vh 2vw;
+    text-decoration: none;
+}
+  
+nav li a:hover {
+    background-color: #ffffff;
+}
+
+aside {
+    width: 50%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    margin-top: .5rem;
+    box-shadow: inset 5px 0 5px -5px #f3c33e;
+    /*font-style: italic;*/
+    color: #f3c33e;
+    font-size: 2vh;
+}
+
+.item1{
+    flex-grow: 2;
+    align-items: stretch;
+}
+.item2 {
+    flex-grow: 1;
+    align-items: stretch;
+}
+section.article {
+    flex-grow: 2;
+}
+
+article.pad {
+    border: 0;
+    display: flex;
+}
+
+.pad p {
+    margin: .5rem;
+    font-size: 17px;
+}
+
+div>img {
+    width: 16vw;
+    z-index: 0;
+}
+
+h1 {
+    position: fixed;
+    top: 0;
+    display: block;
+    width: 35vw;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #181b22;
+    color: #f3c33e;
+    margin-left: 9vw;
+    font-size: 2.5vw;
+}
+
+h2 {
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    font-size: 24px;
+}
+
+.section {
+    display: block;
+    border: 1px solid #f3c33e;
+    margin: .5rem 0;
+    color: #f3c33e;
+    text-align: center;
+}
+
+.col3{
+    width: 50%;
+}
+
+.col4{
+    width: 50%;
+    margin-left:10px;
+}
+
+#gift {
+    background: none;
+    border: none;
+}
+
+
+a:link :not(.btn b) {
+    color:#f3c33e
+}
+
+a:visited:not(main a){
+    color:rgb(205, 10, 14);
+}
+
+a:hover:not(.btn) {
+    color:#f7e882;
+    background-color: #3f0909;
+}
+
+/* a:active {
+    background-color:rgb(229, 240, 33)
+} */
+
+.cyrilic {
+    list-style-type: none; /* Прячем исходную нумерацию */
+}
+.cyrilic li::before {
+    float: left;
+ margin-right: 5px; /* Расстояние от буквы до текста */
+ width: 49%; /* Ширина */
+ text-align: left; /* Выравнивание по правому краю */
+ display: block; /* блочный элемент */
+ color: #dd133f;
+}
+.cyrilic li:nth-child(1)::before { content: 'А'; }
+.cyrilic li:nth-child(2)::before { content: 'Б'; }
+.cyrilic li:nth-child(3)::before { content: 'В'; }
+.cyrilic li:nth-child(4)::before { content: 'Г'; }
+.cyrilic li:nth-child(5)::before { content: 'Д'; }
+.cyrilic li:nth-child(6)::before { content: 'Е'; }
+.cyrilic li:nth-child(7)::before { content: 'Ё'; }
+.cyrilic li:nth-child(8)::before { content: 'Ж'; }
+.cyrilic li:nth-child(9)::before { content: 'З'; }
+.cyrilic li:nth-child(10)::before { content: 'И'; }
+.cyrilic li:nth-child(11)::before { content: 'К'; }
+.cyrilic li:nth-child(12)::before { content: 'Л'; }
+.cyrilic li:nth-child(13)::before { content: 'М'; }
+.cyrilic li:nth-child(14)::before { content: 'Н'; }
+.cyrilic li:nth-child(15)::before { content: 'О'; }
+.cyrilic li:nth-child(16)::before { content: 'П'; }
+.cyrilic li:nth-child(17)::before { content: 'Р'; }
+.cyrilic li:nth-child(18)::before { content: 'С'; }
+.cyrilic li:nth-child(19)::before { content: 'Т'; }
+.cyrilic li:nth-child(20)::before { content: 'У'; }
+.cyrilic li:nth-child(21)::before { content: 'Ф'; }
+.cyrilic li:nth-child(22)::before { content: 'Х'; }
+.cyrilic li:nth-child(23)::before { content: 'Ц'; }
+.cyrilic li:nth-child(24)::before { content: 'Ч'; }
+.cyrilic li:nth-child(25)::before { content: 'Ш'; }
+.cyrilic li:nth-child(26)::before { content: 'Щ'; }
+.cyrilic li:nth-child(27)::before { content: 'Э'; }
+.cyrilic li:nth-child(28)::before { content: 'Ю'; }
+.cyrilic li:nth-child(29)::before { content: 'Я'; }
+
+.form1 span {
+    color: #dd133f;
+}
+
+label{
+    color: white;
+    display: block;
+}
+  
+  /*поведение при нажатие на поле*/
+input:focus{
+    outline: none;
+    background: #181b22;
+    text-decoration: none;
+    border-color: #f3c33e;
+    color: white;
+}
+
+input{
+    display: block;
+    width: 90%;
+    height: 5vh;
+    border: 4px solid #f3c33e;
+    margin: auto;
+    margin-top: 0.8vh;
+    text-align: center;
+}
+
+/*отвечает за кнопку выбора файла*/
+.input-file {
+    position: relative;
+    width: 25vw;
+    color: black;
+    margin: 20px;
+}
+.input-file > span {
+    cursor: pointer;
+    vertical-align: middle;
+    background: white;
+    height: 5vh;
+    border: 2px solid #f3c33e;
+    padding: 1vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    margin: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    text-align: center;
+    z-index: 5;
+}
+.input-file > input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+fieldset{
+    width: 15vw;
+    margin: 3vw 4vh;
+    color: #f3c33e;
+    margin-left: 20px;
+}
+
+fieldset > label {
+    width: 10vw;
+    margin: 1vw 4vh;
+    font-size: 1em;
+}
+
+.inp {
+    width: 50%;
+    height: 3vh;
+    margin: auto;
+    margin-top: 0.8vh;
+    text-align: center;
+}
+
+textarea{
+    width:90%;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+select{
+    width: 10vw;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+::placeholder {
+    font-weight: bold;
+    opacity: .5;
+    color: rgb(163, 181, 205);
+}
+
+.d4{
+    background-color: #181b22;
+    border: 10px solid rgba(255, 183, 14, 0.856);
+    display: block;
+    margin: 40px;
+    padding: 50px;
+}
+
+
+.check{
+    margin-top: 25px;
+}
+
+.custom-checkbox{
+    position: absolute;
+    top: 615px;
+    left: 190px;
+}
+/* стиль при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border: 10px #f3c33e;
+}
+/* стиль для активного состояния чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active+label::before {
+    background-color: #f6ffb3;
+    border-color: #f3c33e;
+}
+/* стиль для чекбокса, находящегося в фокусе */
+.custom-checkbox:focus+label::before {
+    box-shadow: 0 0 0 0.5rem rgba(255, 213, 0, 0.312);
+}
+/* стиль для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked)+label::before {
+    border-color: #f3c33e;
+}
+/* стиль для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled+label::before {
+    background-color: #bac4ce;
+}
+
+input[type=submit] {
+    background-color: #f3c33e;
+    border: none;
+    color: #000000;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    cursor:pointer;
+}
+
+.button2:hover {
+    box-shadow: 10px 5px 5px #74590ec3;
+}
+
+#sub{
+    width:50%;
+    margin-left: 5%;
+}
+
+/*----------
+
+
+div.FLEX {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}*/
+
+  .item {
+    padding: 10px;
+    background-color: rgba(213, 102, 102, 0.3);
+    border: 2px solid #f3c33e;
+    margin: 0.5rem;
+    flex: 1 1 310px;
+  }
+
+.item1 {
+    padding: 10px;
+    background-color: rgba(213, 102, 102, 0.3);
+    border: 2px solid #f3c33e;
+    margin: 0.5rem;
+    flex: 2 1 310px;
+}
+.FLEX > .item {
+    background-color: #181b22;
+}
+
+/*.gallery {
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}*/
+
+.gallery img {
+    padding: 5px;
+    height: 280px;
+    width: auto;
+    border-radius: 3%;
+}
+
+#menu__toggle, #menu__btn{display: none}
+
+.hamburger-menu
+{
+    width:100%;
+    display:block;
+    float:center;
+    text-align:center; 
+
+}
+
+.hamburger-menu ul{
+    text-align: center; 
+    padding: 0;
+    
+}
+
+
+
+
+/* --- 8 practika --- */
+
+
+.soc_div /*блок содержащий анимированные иконки соцсетей*/
+{
+
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+        flex-flow: wrap;
+        border:none;
+        margin: 10px;
+        padding: 10px;
+        flex-grow: 1;
+        background-color: #f3c33e;
+}
+
+.soc_but /*каждый из 4 кружков с соцсетью*/
+{
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 0;
+    background-color: #181b22;
+}
+
+.soc_but::before /*свойства цветного квадрата над соцсетями*/
+{
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    top: -100%;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    padding-top: 20px;
+    background: linear-gradient(45deg, rgb(116, 18, 201), rgb(33, 212, 209));
+    transition: 0.3s linear;
+    z-index:-1;
+}
+
+.soc_but:hover::before /*градиентный кружок спускается на соцсети*/
+{
+    top:0;
+}
+
+.soc_but a{
+    text-decoration: none;
+}
+
+.soc_but i{ /*отвечает за расположение значков соцсетей*/
+    display: block;
+    font-size: 1.6rem;
+    z-index:20;
+    position:relative;
+    text-decoration: none;
+    top: 8px;
+}
+
+form a{
+    grid-area: q;
+}
+.form_content form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 60px) 40px;
+    grid-template-areas: 
+        "n sn"
+        "e p"
+        "s ."
+        "q .";
+    row-gap: 20px;
+}
+
+.form_content /*здесь и серая плашка, и текст*/
+{
+    width: 90%;
+    box-sizing: border-box;
+    margin: 10% auto;
+    padding: 0 40px;
+    position: relative;
+    background-color: rgba(202, 163, 56, 0.704);
+    backdrop-filter: blur(50px);
+    border-radius: 8px;
+    border: 1px solid #181b22;
+    transition:0.5s;
+    color: #fff;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.form_content p /*черта под авторизацией*/
+{
+    display: block;
+    position: relative;
+    width: 200px;
+    padding-bottom:10px; /*10 пикселей отступ от низа букв авторизация*/
+}
+
+.form_content p::before /*описание черты под авторизацией и как она появляется*/
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    height: 4px;
+    width: 0;
+    opacity: 0; /*изначально она не видна.*/
+    background-color: white;
+    transition: 0.5s;
+}
+.form_content:hover p::before 
+{
+    left:0%;
+    width: 100%;
+    opacity: 1;
+}
+
+.form_content a {
+    font-size: small;
+}
+.form_content a:hover {
+    background-color: transparent;
+}
+
+.form_content form input{
+    display: block;
+    width: 80%;
+    height: 50%;
+    margin-bottom: 5%;
+    text-align: left;
+    border: 0.5px solid #181b22;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(100px);
+    padding: 15px;
+}
+
+.form_content form input:focus{ /*при нажатии фон в поле для ввода меняется на более светлый*/
+    border: none;
+    background-color: rgba(255, 255, 255, 0.407);
+}
+
+.form_content form input::placeholder /*описание текста показывающего что вводить*/
+{
+    padding: 10px 5px;
+    font-size: 1.3em;
+    color:rgba(236, 228, 228);
+}
+
+.form_content form button{ /*как кнопка выглядит в изначальном состоянии*/
+    cursor: pointer;
+    display: block;
+    height: 90%;
+    width: 50%;
+    margin-top: 5px;
+    border-radius: 40px;
+    background-color:white;
+    backdrop-filter: blur(100px);
+    padding: 10px 5px;
+    font-size: 0.7em;
+    font-weight: 600;
+    border: none;
+    color: rgb(126, 116, 116);
+    transition: 0.5s;
+}
+
+.form_content form button:hover /*что происходит с кнопкой при наведении*/
+{
+    background-color: rgba(255, 255, 255, 0.1);
+    color:white;
+}
+
+
+main{
+    grid-area: navi;
+    grid-column: 2;
+    grid-row: 2;
+}
+.center{
+    grid-area: center;
+    grid-column: 2;
+    grid-row: 3;
+}
+#gift{
+    border: 1px solid #f3c33e;
+    grid-area: gift;
+    grid-column: 1;
+    grid-row: 2 / span 2;
+}
+.author{
+    grid-area: auth;
+}
+.pract{
+    grid-area: prac;
+}
+header {
+    grid-area: head;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+.body{
+    display: grid;
+    grid-template-columns: 15vw 60vw 15vw;
+    grid-template-rows: 200px 70px 2000px 1000px;
+    grid-template-areas: 
+        "head head   head" 
+        "gift navi   auth"
+        "gift senter auth"
+        "prac prac   prac";
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+@media (min-width: 771px) and (max-width: 1000px) {
+    .body{
+        display: grid;
+        grid-template-columns: 20vw 70vw;
+        grid-template-rows: 200px 70px 770px 700px 1000px;
+        grid-template-areas: 
+            "head head  "
+            "navi navi  " 
+            "gift senter"
+            "auth senter"
+            "prac prac  ";
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 770px){
+
+    .d2{width: 100%; flex-grow: 2; margin: 0;}
+    .d4{width: 87vw; margin: 10px 10px;}
+    .aa{width:70vw;}
+
+    main{
+        grid-area: navi;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .center{
+        grid-area: center;
+        grid-column: 1;
+        grid-row: 3;
+    }
+    #gift{
+        border: 1px solid #f3c33e;
+        grid-area: gift;
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 210px 70px 1700px 500px 500px 1000px;
+        grid-template-areas: 
+            "head " 
+            "navi "
+            "senter"
+            "gift "
+            "auth "
+            "prac ";
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+
+    .form_content form{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 60px) 40px;
+        grid-template-areas: 
+            "n " 
+            "sn"
+            "e " 
+            "p "
+            "s "
+            "q ";
+        row-gap: 20px;
+    }
+
+    .form_content /*здесь и серая плашка, и текст*/
+    {
+    width: 90%;
+    box-sizing: border-box;
+    margin: 10% auto;
+    padding: 5vw;
+    position: relative;
+    background-color: rgba(202, 163, 56, 0.704);
+    backdrop-filter: blur(1000px);
+    border-radius: 8px;
+    border: 1px solid #181b22;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 1500;
+    transition:0.5s;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 600;
+    }
+
+    .form_content form button{ /*как кнопка выглядит в изначальном состоянии*/
+        cursor: pointer;
+        display: block;
+        height: 90%;
+        width: 33%;
+        margin-top: 5px;
+        border-radius: 40px;
+        background-color:white;
+        backdrop-filter: blur(100px);
+        padding: 10px 5px;
+        font-size: 0.5em;
+        font-weight: 600;
+        border: none;
+        color: rgb(126, 116, 116);
+        transition: 0.5s;
+    }
+
+    div.FLEX {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    div img {
+        width: 150px;
+        z-index: -10;
+    }
+
+    .image-item:hover .overlay {
+        width: 150px;
+    }
+
+    div.logo {
+        position: fixed;
+        display: block;
+        top: 0;
+        width: 100%;
+        height: 2.7rem;
+        background-color: #181b22;
+        z-index: 1000;
+    }
+
+    .logo img{
+        position: fixed;
+        top: 0;
+        display: flex;
+        margin-left: 0px;
+        width: 55px;
+    }
+    h1 {
+        position: fixed;
+        top: 0;
+        display: block;
+        width: 15rem;
+        font-family: 'Press Start 2P', cursive;
+        background-color: #181b22;
+        color: #f3c33e;
+        margin-left: 70px;
+        font-size: 24px;
+    }
+
+    h2{font-size: 28px;}
+
+    nav li{
+        display: block;
+        width:100%;
+        margin: auto;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .image-gallery img {
+        width: 100%;
+        height: auto;
+    }   
+    
+    /* контейнер меню */
+    .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        margin-top: 50px;
+        list-style: none;
+        text-align: center;
+        background-color: #181b22;
+        z-index: 1000;
+    }
+    
+    .menu__btn {
+        display: flex; 
+        align-items: center;  
+        position: fixed;
+        top: 15px;
+        right: 20px;
+        width: 22px; /*по ширине кнопки расположены три полосы span*/
+        height: 26px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    /*составляющие кнопки меню мобилок*/
+    .menu__btn > span, .menu__btn > span::before, .menu__btn > span::after{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px; /*ширина полос, составляющих кнопку меню мобилок-->*/
+        background-color: #f3c33e; /*цвет полос, составляющих кнопку меню мобилок-->*/
+    }
+
+    .menu__btn > span::before { /*верхняя полоска*/
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {/*нижняя полоска*/
+        content: '';
+        top: 8px;
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span { /*разворот средней полоски после нажатия*/
+    transform: rotate(45deg);
+    }
+        #menu__toggle:checked ~ .menu__btn > span::before { /*разворот верхней полоски после нажатия*/
+        top: 0;
+        transform: rotate(0);
+        }
+        #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+        }
+        #menu__toggle:checked ~ .menu__box { /*контейнер меню становится видимым*/
+        visibility: visible;
+        left: 0;
+        opacity: 0.9;
+        }
+}
+
+/*--- gallery ---*/
+
+.gallery h2{
+    grid-column: 1 / span 4;
+}
+
+.a {
+    grid-column: 1;
+    grid-row: 2 / span 2;
+    position: relative;
+    cursor: pointer;
+}
+.b {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+    position: relative;
+    cursor: pointer;
+}
+.d {
+    grid-column: 4;
+    grid-row: 3 / span 2;
+    position: relative;
+    cursor: pointer;
+}
+.e {
+    grid-column: 1 / span 2;
+    grid-row: 4 ;
+    position: relative;
+    cursor: pointer;
+}
+.f {
+    grid-column: 3 / span 2;
+    grid-row: 2;
+    position: relative;
+    cursor: pointer;
+}
+.g {
+    grid-column: 3;
+    grid-row: 3 / span 2;
+    position: relative;
+    cursor: pointer;
+}
+
+div.gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px repeat(3, 250px);
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+.gallery img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.image-item .overlay {
+    position: absolute;
+    width: 16vw;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.552);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.2s 0.1s ease-in-out;
+    color: #fff;
+    /* center overlay content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.a .overlay, .b .overlay, .d .overlay, .e .overlay, .f .overlay, .g .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.552);
+    top: 5px;
+    left: 5px;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: all 0.4s 0.1s ease-in-out;
+    color: #fff;
+    /* center overlay content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ /* hover */
+ .image-item:hover .overlay, .a:hover .overlay, .b:hover .overlay, .d:hover .overlay, .e:hover .overlay, .f:hover .overlay, .g:hover .overlay{
+    transform: scale(1);
+}
+.image-item span {
+    text-align: center;
+    font-size: small;
+}
+.image-item {
+    position: relative;
+    cursor: pointer;
+}
+  
+ 
